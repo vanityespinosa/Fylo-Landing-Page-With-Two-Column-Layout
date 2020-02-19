@@ -71,3 +71,9 @@ h1, h2 {
   text-decoration: underline;
 }
 
+/****************************************
+  Landing Page Styles
+****************************************/
+#landing-pg figure img {
+  width: 20rem;
+}
