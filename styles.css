@@ -1,3 +1,73 @@
 /************************************************************
   Default Styles / Mobile-first Approach 
 ************************************************************/
+
+/****************************************
+  Overall Default Styles
+****************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /***** Colors *****/
+
+  /* Primary */
+  --veryDarkBlue: hsl(243, 87%, 12%);
+  --desaturatedBlue:  hsl(238, 22%, 44%);
+
+  /* Accent */
+  --brightBlue: hsl(224, 93%, 58%);
+  --moderateCyan: hsl(170, 45%, 43%);
+
+  /* Neutral */
+  --lightGrayishBlue: hsl(240, 75%, 98%);
+  --lightGray: hsl(0, 0%, 75%);
+
+  /***** Spacing *****/
+  --mobile-spacing: 1.5rem 1.2rem;
+
+}
+header {
+  height: 10vh;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: var(--mobile-spacing);
+}
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/****************************************
+  Navigation Styles
+****************************************/
+#navigation {
+  display: flex;
+  justify-content: space-between;
+}
+#logo img {
+  width: 6.5rem;
+}
+#links {
+  display: flex;
+}
+#links li {
+  padding-right: 1rem;
+}
+#links li:last-child {
+  padding-right: 0;
+}
+#links li a {
+  color: black;
+  text-decoration: none;
+}
+#links li a:hover {
+  color: var(--moderateCyan);
+  text-decoration: underline;
+}
+
