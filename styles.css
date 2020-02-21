@@ -16,6 +16,7 @@
   /* Primary */
   --veryDarkBlue: hsl(243, 87%, 12%);
   --desaturatedBlue:  hsl(238, 22%, 44%);
+  --white: #fff;
 
   /* Accent */
   --brightBlue: hsl(224, 93%, 58%);
@@ -27,7 +28,12 @@
 
   /***** Spacing *****/
   --mobile-spacing: 1.5rem 1.2rem;
+  --block-spacing: 2rem 0;
+  --block-spacing-btm: 2rem;
 
+}
+body {
+  text-align: center;
 }
 header {
   height: 10vh;
@@ -42,7 +48,13 @@ body {
 h1, h2 {
   font-family: 'Raleway', sans-serif;
 }
+h1 {
+  padding: var(--block-spacing);
+}
 
+.illustration {
+  width: 20rem;
+}
 /****************************************
   Navigation Styles
 ****************************************/
@@ -74,6 +86,35 @@ h1, h2 {
 /****************************************
   Landing Page Styles
 ****************************************/
-#landing-pg figure img {
-  width: 20rem;
+#landing-pg p{
+  padding: var(--block-spacing);
+}
+
+#landing-pg .email {
+  padding-bottom: var(--block-spacing-btm);
+}
+#landing-pg #email {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+}
+#landing-pg .email button {
+  margin-top: 1.2rem;
+  width: 100%;
+  height: 2.5rem;
+  background: var(--brightBlue);
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+/****************************************
+  Productive Styles
+****************************************/
+#productive figure {
+  padding: var(--block-spacing);
 }
