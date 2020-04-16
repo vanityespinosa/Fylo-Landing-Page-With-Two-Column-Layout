@@ -187,7 +187,7 @@ p {
   background-color: var(--desaturatedBlue);
   color: var(--white);
 }
-#access div {
+#access .signup {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -219,7 +219,7 @@ p {
   text-align: left;
   padding: 1.5rem 3rem;
 }
-#contact div {
+#contact .image {
   padding: var(--block-spacing);
 }
 #contact ul {
@@ -232,6 +232,19 @@ p {
   margin-right: 1rem;
 }
 
+/***** Social Links Section *****/
+#social-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#social-links ul li {
+  padding: 0 2rem 0 0;  
+}
+#social-links ul li i {
+  font-size: 2rem;  
+}
+
 /****************************************
   Footer Styles
 ****************************************/
@@ -239,19 +252,173 @@ footer {
   background-color: var(--veryDarkBlue);
   color: var(--white);
 }
-footer ul {
-  display: flex;
-  justify-content: center;
-}
-footer ul li {
-  padding: 0 2rem 2rem 0;  
-}
-footer ul li i {
-  font-size: 2rem;  
-}
 footer .attribution a {
   color: var(--desaturatedBlue);
 }
 footer .attribution a:hover {
   color: var(--white);
+}
+
+/************************************************************
+  Tablet Design
+************************************************************/
+@media only screen and (min-width:750px) {
+  /****************************************
+    Overall Default Styles
+  ****************************************/
+  header {
+    height: 10rem;
+    padding: 3rem;
+  }
+  section {
+    padding: 3rem;
+  }
+  /****************************************
+    Header Section
+  ****************************************/
+  #navigation ul li {
+    padding-right: 2rem;
+  }
+  #navigation ul l:last-child {
+    padding-right: 0;
+  }
+
+  /****************************************
+    Landing Page Section
+  ****************************************/
+  #landing-pg .email {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: var(--block-spacing-btm);
+  }
+}
+
+/************************************************************
+  Desktop Design
+************************************************************/
+@media only screen and (min-width:1000px) {
+  /****************************************
+    Overall Element Styles
+  ****************************************/
+  body {
+    font-size: 1.15rem;
+  }
+  header {
+    padding: 3rem 4rem;
+  }
+  section {
+    padding: 4rem;
+  }
+  h1,
+  h2 {
+    font-size: 2.5rem;
+  }
+  /****************************************
+    Overall Class Styles
+  ****************************************/
+  .illustration {
+    width: 35rem;
+  }
+  .bg-curve-mobile {
+    background-image: none;
+  }
+  .bg-curve-desktop {
+    background-image: url('/images/bg-curve-desktop.svg');
+    background-color: var(--white);
+    height: 7rem;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  }
+  /****************************************
+    Landing Page Section
+  ****************************************/
+  #landing-pg {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 10rem;
+  }
+  #landing-pg .email {
+    margin: 0;
+    display: flex;
+    width: 100%;
+  }
+  #landing-pg .email #email {
+    margin-right: 1.50rem;
+    width: 50%;
+  }
+  #landing-pg .email button {
+    margin: 0;
+    width: 30%;
+  }
+  /****************************************
+    Productive Section
+  ****************************************/
+  #productive {
+    padding-top: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: left;
+  }
+  #productive figure {
+    align-self: center
+  }
+  #productive .illustration {
+    width: 30rem;
+  }
+  #productive .info-link {
+    padding-bottom: 4rem;
+    justify-content: left;
+  }
+  #productive blockquote {
+    line-height: 1.5;
+    width: 80%;
+  }
+  /****************************************
+    Access Section
+  ****************************************/
+  #access {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  #access div h2 {
+    padding-top: 0;
+  }
+  #access div p {
+    width: 80%;
+  }
+  #access .signup {
+    margin: auto 0;
+    width: 60%;
+
+  }
+  #access .signup #email {
+    height: 2.25rem;
+  }
+  #access div button {
+    width: 50%;
+    height: 2.25rem;
+  }
+  /****************************************
+    Contact Section
+  ****************************************/
+  #contact {
+    padding: 4rem;
+  }
+  /***** Contact Links Section *****/ 
+  #contact-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  /***** Social Links Section *****/
+  #social-links ul {
+    display: flex;
+  }
+  #social-links ul li {
+    padding: 0.50rem;
+  }
 }
