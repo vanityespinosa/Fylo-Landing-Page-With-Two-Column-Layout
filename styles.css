@@ -34,27 +34,39 @@
 }
 body {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 header {
   height: 10vh;
+  padding: var(--mobile-spacing);
 }
 ul {
   list-style: none;
 }
-body {
-  font-family: 'Open Sans', sans-serif;
+section {
   padding: var(--mobile-spacing);
 }
 h1, h2 {
   font-family: 'Raleway', sans-serif;
-}
-h1 {
   padding: var(--block-spacing);
 }
+p {
+  padding-bottom: var(--block-spacing-btm);
+}
 
+/********* Overall Classes *********/
 .illustration {
   width: 20rem;
 }
+.bg-curve-mobile {
+  background-image: url('/images/bg-curve-mobile.svg');
+  background-color: var(--white);
+  height: 10vh;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
 /****************************************
   Navigation Styles
 ****************************************/
@@ -86,10 +98,6 @@ h1 {
 /****************************************
   Landing Page Styles
 ****************************************/
-#landing-pg p{
-  padding: var(--block-spacing);
-}
-
 #landing-pg .email {
   padding-bottom: var(--block-spacing-btm);
 }
@@ -115,6 +123,135 @@ h1 {
 /****************************************
   Productive Styles
 ****************************************/
+#productive {
+  background: var(--lightGrayishBlue);
+}
 #productive figure {
   padding: var(--block-spacing);
+}
+#productive .info-link {
+  padding-bottom: var(--block-spacing-btm);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+#productive .info-link a {
+  color: var(--moderateCyan);
+  text-decoration: none;
+  padding-bottom: .25rem;
+  border-bottom: 2px solid var(--moderateCyan);
+}
+#productive .info-link img {
+  width: 25px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+#productive blockquote {
+  background: var(--white);
+  padding: 2.50rem;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0px 0px 5px 0px lightgrey;
+  margin-bottom: var(--block-spacing-btm);
+}
+#productive blockquote .quotation {
+  width: 20px;
+  padding-bottom: 0.75rem;
+}
+#productive blockquote p {
+  letter-spacing: 2px;
+}
+
+/********* Testimonial *********/
+#testimonial {
+  display: flex;
+}
+#testimonial img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+#testimonial p:first-child {
+  padding-bottom: 0.25rem;
+  font-weight: bold;
+}
+#testimonial p:last-child {
+  padding: 0;
+  font-size: .75rem;
+}
+/****************************************
+  Access Styles
+****************************************/
+#access {
+  background-color: var(--desaturatedBlue);
+  color: var(--white);
+}
+#access div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+#access input {
+  height: 2rem;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 0.50rem;
+  padding: 0 1rem;
+}
+#access button {
+  height: 2rem;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--brightBlue);
+  color: white;
+  font-weight: bold;
+  margin-bottom: var(--block-spacing-btm);
+}
+
+/****************************************
+  Contact Styles
+****************************************/
+#contact {
+  background-color: var(--veryDarkBlue);
+  color: var(--white);
+  text-align: left;
+  padding: 1.5rem 3rem;
+}
+#contact div {
+  padding: var(--block-spacing);
+}
+#contact ul {
+  padding-bottom: var(--block-spacing-btm);  
+}
+#contact ul li {
+  padding: 0.50rem 0;  
+}
+#contact img {
+  margin-right: 1rem;
+}
+
+/****************************************
+  Footer Styles
+****************************************/
+footer {
+  background-color: var(--veryDarkBlue);
+  color: var(--white);
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer ul li {
+  padding: 0 2rem 2rem 0;  
+}
+footer ul li i {
+  font-size: 2rem;  
+}
+footer .attribution a {
+  color: var(--desaturatedBlue);
+}
+footer .attribution a:hover {
+  color: var(--white);
 }
